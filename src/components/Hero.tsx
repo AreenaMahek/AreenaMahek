@@ -3,105 +3,112 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const roles = [
-  "AI Software Engineer",
-  "Full Stack Developer",
-  "Cloud Solutions Architect",
-  "Machine Learning Engineer",
-];
-
-
+const role = "AI Software Engineer & Full Stack Developer";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [displayText, setDisplayText] = useState("");
-  const [roleIndex, setRoleIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
   useEffect(() => {
-    const currentRole = roles[roleIndex];
-    const typeSpeed = isDeleting ? 50 : 100;
+    if (isTypingComplete) return;
 
     const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        if (displayText.length < currentRole.length) {
-          setDisplayText(currentRole.slice(0, displayText.length + 1));
-        } else {
-          setTimeout(() => setIsDeleting(true), 2000);
-        }
+      if (displayText.length < role.length) {
+        setDisplayText(role.slice(0, displayText.length + 1));
       } else {
-        if (displayText.length > 0) {
-          setDisplayText(displayText.slice(0, -1));
-        } else {
-          setIsDeleting(false);
-          setRoleIndex((prev) => (prev + 1) % roles.length);
-        }
+        setIsTypingComplete(true);
       }
-    }, typeSpeed);
+    }, 100);
 
     return () => clearTimeout(timeout);
-  }, [displayText, isDeleting, roleIndex]);
+  }, [displayText, isTypingComplete]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary)] rounded-full filter blur-[128px] opacity-20" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--secondary)] rounded-full filter blur-[128px] opacity-20" />
       <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[var(--accent)] rounded-full filter blur-[100px] opacity-10 -translate-x-1/2 -translate-y-1/2" />
 
-      <div className="section-container relative z-10">
-        <div
-          className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-        >
-          {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-[var(--primary)] shadow-xl">
-              <Image
-                src="/Main_photo.jpg"
-                alt="Areena Mahek"
-                fill
-                className="object-cover object-top"
-                priority
-              />
+      <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
+        {/* Static gradient border container */}
+        <div className="relative p-[3px] rounded-3xl">
+          {/* Static gradient border */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--secondary)] rounded-3xl opacity-70" />
+
+          {/* Inner content container */}
+          <div className="relative bg-[var(--background)] rounded-[22px] p-10 md:p-16 lg:p-20">
+            <div
+              className={`flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+            >
+              {/* Left - Large Image */}
+              <div className="flex-shrink-0">
+                <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-[var(--primary)] shadow-2xl">
+                  <Image
+                    src="/Main_photo.jpg"
+                    alt="Areena Mahek"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+              </div>
+
+              {/* Right - Text Content */}
+              <div className="flex-1 text-center lg:text-left">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-2">
+                  Hello.
+                </p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3">
+                  <span className="gradient-text">I&apos;m Areena Mahek</span>
+                </h1>
+
+                <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-[var(--text-muted)] mb-6 h-8 md:h-10">
+                  <span>{displayText}</span>
+                  <span className="animate-blink text-[var(--accent)]">|</span>
+                </h2>
+
+                <div className="flex flex-col gap-4 mb-8 max-w-xl">
+                  <p className="text-base md:text-lg text-[var(--text-muted)] flex items-center gap-3">
+                    <span className="text-[var(--accent)] text-xl">&#10038;</span>
+                    Passionate about leveraging AI and web technologies to build innovative and impactful solutions.
+                  </p>
+
+                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <span className="px-4 py-2 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] text-white rounded-full text-sm font-semibold shadow-lg">
+                      Adaptive
+                    </span>
+                    <span className="px-4 py-2 bg-gradient-to-r from-[var(--secondary)] to-[var(--tertiary)] text-white rounded-full text-sm font-semibold shadow-lg">
+                      Focused
+                    </span>
+                    <span className="px-4 py-2 bg-gradient-to-r from-[var(--accent)] to-[var(--primary)] text-white rounded-full text-sm font-semibold shadow-lg">
+                      Dedicated
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
+                  <a
+                    href="#contact"
+                    className="px-8 py-3 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-all duration-300 font-medium animate-pulse-glow"
+                  >
+                    Get In Touch
+                  </a>
+                  <a
+                    href="#projects"
+                    className="px-8 py-3 border border-[var(--primary)] text-[var(--primary-light)] hover:bg-[var(--primary)]/10 rounded-lg transition-all duration-300 font-medium"
+                  >
+                    View My Work
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-            <span className="gradient-text">Areena Mahek</span>
-          </h1>
-
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[var(--text-muted)] mb-6 h-10 md:h-12">
-            <span>{displayText}</span>
-            <span className="animate-blink text-[var(--accent)]">|</span>
-          </h2>
-
-          <p className="text-base md:text-lg text-[var(--text-muted)] max-w-2xl mx-auto mb-8 leading-relaxed">
-            Full-Stack Developer with 2+ years of experience building scalable,
-            cloud-integrated, AI-driven web applications. Proficient in{" "}
-            <span className="text-[var(--secondary)]">Next.js</span>,{" "}
-            <span className="text-[var(--primary-light)]">React</span>,{" "}
-            <span className="text-[var(--accent)]">TypeScript</span>,{" "}
-            <span className="text-[var(--secondary)]">Python</span>, and{" "}
-            <span className="text-[var(--primary-light)]">Golang</span>.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#contact"
-              className="px-8 py-3 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-all duration-300 font-medium animate-pulse-glow"
-            >
-              Get In Touch
-            </a>
-            <a
-              href="#projects"
-              className="px-8 py-3 border border-[var(--primary)] text-[var(--primary-light)] hover:bg-[var(--primary)]/10 rounded-lg transition-all duration-300 font-medium"
-            >
-              View My Work
-            </a>
           </div>
         </div>
       </div>

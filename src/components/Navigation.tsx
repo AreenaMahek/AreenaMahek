@@ -3,10 +3,9 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
+  { href: "#about", label: "About Me" },
   { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#publications", label: "Publications" },
+  { href: "#publications", label: "Research" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
@@ -26,8 +25,8 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-[var(--background)]/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+        ? "bg-[var(--background)]/95 backdrop-blur-md shadow-lg"
+        : "bg-transparent"
         }`}
     >
       <div className="section-container">
@@ -65,9 +64,7 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="/AreenaMahek_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/resume"
               className="px-4 py-2 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-colors duration-200 text-sm font-medium"
             >
               Resume
@@ -120,9 +117,7 @@ export default function Navigation() {
                 </a>
               ))}
               <a
-                href="/AreenaMahek_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resume"
                 className="inline-block px-4 py-2 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-colors duration-200 text-base font-medium text-center"
               >
                 Resume

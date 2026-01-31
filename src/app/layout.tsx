@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Areena Mahek | Software Engineer & AI Developer",
+  title: "Areena Mahek | AI Software Engineer & Full Stack Developer",
   description:
     "Full-Stack Developer with 2+ years of experience building scalable, cloud-integrated, AI-driven web applications. Proficient in Next.js, React, TypeScript, Python, and Golang.",
   keywords: [

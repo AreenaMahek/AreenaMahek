@@ -11,9 +11,8 @@ export default function Contact() {
           <div className="w-20 h-1 bg-[var(--primary)] mx-auto mb-8" />
 
           <p className="text-[var(--text-muted)] text-base md:text-lg mb-8 leading-relaxed">
-            I&apos;m currently open to new opportunities and would love to hear from
-            you. Whether you have a question, want to collaborate on a project, or
-            just want to say hi, feel free to reach out!
+            Thanks for visiting my portfolio. Feel free to reach out if you have questions about my work or want to discuss potential opportunities.
+            Would be happy to connect! ☺️
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -34,26 +33,7 @@ export default function Contact() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              Say Hello
-            </a>
-            <a
-              href="tel:+13127831733"
-              className="flex items-center gap-2 px-6 py-3 border border-[var(--primary)] text-[var(--primary-light)] hover:bg-[var(--primary)]/10 rounded-lg transition-all duration-300 font-medium"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              (312) 783-1733
+              Say Hello 👋
             </a>
           </div>
 
@@ -101,7 +81,7 @@ export default function Contact() {
               <h3 className="font-medium text-[var(--foreground)] group-hover:text-[var(--primary-light)] transition-colors">
                 GitHub
               </h3>
-              <p className="text-sm text-[var(--text-muted)]">AreenaMahekAI</p>
+              <p className="text-sm text-[var(--text-muted)]">AreenaMahek</p>
             </a>
 
             <div className="group flex flex-col items-center p-6 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-[var(--primary)]/50 transition-colors duration-300">
