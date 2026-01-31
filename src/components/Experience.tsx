@@ -1,9 +1,12 @@
 "use client";
 
+import Image from "next/image";
+
 const experiences = [
   {
     title: "Software Engineer",
     company: "Oxmaint Inc.",
+    logo: "/oxmaint.jpeg",
     location: "Sunnyvale, CA (Remote)",
     period: "Jan 2026 – Present",
     highlights: [
@@ -11,10 +14,12 @@ const experiences = [
       "Implemented third-party integrations with QuickBooks and SAP to support enterprise workflows and financial operations",
       "Applied data analysis techniques to improve system performance, scalability, quality assurance and overall reliability",
     ],
+    tags: ["React", "Next.js", "TypeScript", "Golang", "Tailwind CSS", "AI Automation", "QuickBooks Integration", "SAP Integration", "RAG"],
   },
   {
     title: "Software Engineer Intern",
     company: "Oxmaint Inc.",
+    logo: "/oxmaint.jpeg",
     location: "Sunnyvale, CA (Remote)",
     period: "Sept 2025 – Dec 2025",
     highlights: [
@@ -31,6 +36,7 @@ const experiences = [
   {
     title: "Research Assistant",
     company: "DePaul University",
+    logo: "/depaul.png",
     location: "Chicago, IL",
     period: "Aug 2024 – June 2025",
     highlights: [
@@ -45,6 +51,7 @@ const experiences = [
   {
     title: "Graduate Assistant - Tutoring Mentor",
     company: "DePaul University",
+    logo: "/depaul.png",
     location: "Chicago, IL",
     period: "Sept 2023 – June 2025",
     highlights: [
@@ -58,7 +65,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 md:py-32 bg-[var(--card-bg)]/30">
+    <section id="experience" className="py-12 md:py-20 bg-[var(--card-bg)]/30">
       <div className="section-container">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           <span className="gradient-text">Experience</span>
@@ -77,13 +84,23 @@ export default function Experience() {
 
                 <div className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-6 hover:border-[var(--primary)]/50 transition-colors duration-300">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-semibold text-[var(--foreground)]">
-                        {exp.title}
-                      </h3>
-                      <p className="text-[var(--primary-light)]">
-                        {exp.company}
-                      </p>
+                    <div className="flex items-center gap-4">
+                      <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-white flex-shrink-0">
+                        <Image
+                          src={exp.logo}
+                          alt={exp.company}
+                          fill
+                          className="object-contain p-1"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-[var(--foreground)]">
+                          {exp.title}
+                        </h3>
+                        <p className="text-[var(--primary-light)]">
+                          {exp.company}
+                        </p>
+                      </div>
                     </div>
                     <div className="mt-2 md:mt-0 text-right">
                       <p className="text-sm text-[var(--text-muted)]">

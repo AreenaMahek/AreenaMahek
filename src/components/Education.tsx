@@ -1,5 +1,23 @@
 "use client";
 
+const awards = [
+  {
+    title: "Academic Scholarship",
+    description: "Awarded scholarship for Master's program at DePaul University",
+    year: "2023-2025",
+  },
+  {
+    title: "Upsilon Pi Epsilon (UPE) Honor Society",
+    description: "Inducted for academic excellence in Computing and Information Sciences",
+    year: "2024",
+  },
+  {
+    title: "Top Grades Award",
+    description: "Recognized for outstanding academic performance in Master's and Bachelor's programs",
+    year: "2020-2022",
+  },
+];
+
 const education = [
   {
     degree: "M.S. in Computer Science with Data Science",
@@ -29,18 +47,18 @@ const education = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 md:py-32">
+    <section id="education" className="py-12 md:py-20">
       <div className="section-container">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           <span className="gradient-text">Education</span>
         </h2>
         <div className="w-20 h-1 bg-[var(--primary)] mb-12" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {education.map((edu, index) => (
             <div
               key={index}
-              className="group bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-6 hover:border-[var(--primary)]/50 hover:-translate-y-1 transition-all duration-300"
+              className="group bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-8 hover:border-[var(--primary)]/50 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="p-3 bg-[var(--primary)]/10 rounded-lg text-2xl">
@@ -98,6 +116,32 @@ export default function Education() {
                 </svg>
                 {edu.period}
               </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Awards & Honors Section */}
+        <h3 className="text-2xl md:text-3xl font-bold mt-16 mb-8">
+          <span className="gradient-text">Awards & Honors</span>
+        </h3>
+        <div className="w-16 h-1 bg-[var(--primary)] mb-8" />
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {awards.map((award, index) => (
+            <div
+              key={index}
+              className="group bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-6 hover:border-[var(--primary)]/50 hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className="p-2 bg-[var(--accent)]/10 rounded-lg text-2xl">
+                  🏆
+                </div>
+                <span className="text-sm text-[var(--accent)] font-medium">{award.year}</span>
+              </div>
+              <h4 className="text-lg font-semibold text-[var(--foreground)] mb-2 group-hover:text-[var(--primary-light)] transition-colors">
+                {award.title}
+              </h4>
+              <p className="text-sm text-[var(--text-muted)]">{award.description}</p>
             </div>
           ))}
         </div>

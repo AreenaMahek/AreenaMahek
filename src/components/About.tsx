@@ -19,26 +19,38 @@ export default function About() {
         <div className="flex flex-col lg:flex-row gap-12 mb-12">
           {/* Left - Stats cards (smaller) */}
           <div className="grid grid-cols-2 gap-4 lg:w-1/2">
-            <div className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 transition-all duration-300">
+            <a
+              href="#experience"
+              className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
+            >
               <p className="text-3xl font-bold text-[var(--accent)] mb-1">2+</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Years Experience</p>
               <p className="text-xs text-[var(--text-muted)]">Industry experience in software development</p>
-            </div>
-            <div className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 transition-all duration-300">
+            </a>
+            <a
+              href="#education"
+              className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
+            >
               <p className="text-3xl font-bold text-[var(--accent)] mb-1">3</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Degrees Earned</p>
-              <p className="text-xs text-[var(--text-muted)]">Bachelor's + 2 Master's from India & US</p>
-            </div>
-            <div className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 transition-all duration-300">
+              <p className="text-xs text-[var(--text-muted)]">Bachelor&apos;s + 2 Master&apos;s from India & US</p>
+            </a>
+            <a
+              href="#publications"
+              className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
+            >
               <p className="text-3xl font-bold text-[var(--accent)] mb-1">3</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Research Publications</p>
               <p className="text-xs text-[var(--text-muted)]">AI & ML research in ML and NLP</p>
-            </div>
-            <div className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 transition-all duration-300">
+            </a>
+            <a
+              href="#education"
+              className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
+            >
               <p className="text-3xl font-bold text-[var(--accent)] mb-1">3</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Honors & Awards</p>
               <p className="text-xs text-[var(--text-muted)]">UPE Academic Excellence & top grades</p>
-            </div>
+            </a>
           </div>
 
           {/* Right - Focus areas bullet list */}

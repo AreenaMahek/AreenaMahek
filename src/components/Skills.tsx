@@ -17,18 +17,18 @@ const aiSkills = [
 ];
 
 const tools = [
+  { name: "OpenAI", icon: "/openai.png" },
+  { name: "Anthropic", icon: "/anthropic.png" },
   { name: "AWS", icon: "/aws.png" },
   { name: "Azure", icon: "/azure.jpeg" },
   { name: "Docker", icon: "/docker.png" },
-  { name: "Git", icon: "/git.png" },
-  { name: "Linux", icon: "/linux.jpeg" },
   { name: "MongoDB", icon: "/mongodb.jpeg" },
   { name: "PostgreSQL", icon: "/postgresql.png" },
   { name: "MySQL", icon: "/mysql.png" },
-  { name: "OpenAI", icon: "/openai.png" },
-  { name: "Anthropic", icon: "/anthropic.png" },
+  { name: "Git", icon: "/git.png" },
   { name: "SAP Integration", icon: "/sap.jpeg" },
   { name: "QuickBooks Integration", icon: "/quickbooks.jpeg" },
+  { name: "N8N", icon: "/n8n.png" },
 ];
 
 function SkillBar({ name, level }: { name: string; level: number }) {
