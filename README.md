@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Hi there 👋, I'm Areena Mahek
 
-## Getting Started
+A graduate in Computer Science with a concentration in Data Science from DePaul University, Chicago, IL. I am working as a Software Engineer at Oxmaint AI located in Sunnyvale, CA.My roles and responsibilities include: 
+Web Application Development as per clients needs, Generative AI Integration for User Onboarding and Feature Enrichment, Large Language Models (LLMs) Integration into the product, IoT/Sensor Data Utilization for product enhancement, Implement and manage vector databases and REG methodology, Develop and improve mobile app, Cross-functional collaboration and continuous innovation.
 
-First, run the development server:
+I completed my undergraduate degree in Information Technology and Master of Technology in Computer Science from India. Though, I already received a master's degree from India, I chose to pursue another for my eagerness to delve deeper into the field of Data Science. As part of a research team led by Dr. Alexandru Orhean, in the Visual Informatics and Data Analytics (VIDA) Group], I worked on a data visualization platform using distributed paradigm, called ByteBridge to support BigData in a distribted system. This was created to bridge the gap between Machine Learning Experts, Medical Experts and High-Performance Computing Experts. I have earlier worked with Trame using Python and Vuetify to build an application to detect Out-of-Distribution data. I was a Graduate Assistant Tutor and a Graduate Student Ambassador at DePaul University. I also became a part of Upsilon Pi Epsilon (UPE) DePaul Chapter’s events chair, where I has the opportunity to collaborate with other student leaders, organize events, and meet new people, and received a lifetime membership of ACM.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📫 How to reach me: areenamahek198@gmail.com
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📍 Location: Chicago, IL, United States
+- 😄 Pronouns: She/Her
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 
