@@ -10,6 +10,8 @@ const roles = [
   "Machine Learning Engineer",
 ];
 
+
+
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [displayText, setDisplayText] = useState("");
