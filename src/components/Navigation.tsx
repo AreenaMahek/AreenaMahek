@@ -5,7 +5,9 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { href: "#about", label: "About Me" },
   { href: "#experience", label: "Experience" },
-  { href: "#publications", label: "Research" },
+  { href: "#recommendations", label: "Recommendations" },
+  { href: "#projects", label: "Research" },
+  { href: "#publications", label: "Publications" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
@@ -63,12 +65,6 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="/resume"
-              className="px-4 py-2 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-colors duration-200 text-sm font-medium"
-            >
-              Resume
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -116,12 +112,6 @@ export default function Navigation() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="/resume"
-                className="inline-block px-4 py-2 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-colors duration-200 text-base font-medium text-center"
-              >
-                Resume
-              </a>
             </div>
           </div>
         )}
