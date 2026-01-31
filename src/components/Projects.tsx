@@ -27,19 +27,7 @@ const projects = [
     ],
     github: "https://github.com/AreenaMahek/Neurobazaar_2025",
     image: "/bytebridge.png",
-  },
-  {
-    title: "Interactive OoD Data Visualization Dashboard",
-    description:
-      "A low-latency, interactive data visualization platform for research workflows. Features dynamic histogram visualization with adjustable bin sizing and interactive 2D boundary system for OoD data classification.",
-    tags: ["Python", "Trame", "Vue.js", "Vuetify", "VTK", "Plotly"],
-    highlights: [
-      "Dynamic histogram visualization engine",
-      "Interactive 2D boundary system (Easy | Medium | Hard)",
-      "Performance benchmarking across visualization technologies",
-    ],
-    github: "https://github.com/AreenaMahek/OoD_Visualizer-2024",
-    image: "/ood.jpeg",
+    date: "June 2025",
   },
   {
     title: "Cloud-Based Sentiment Analysis on Big Data",
@@ -53,6 +41,21 @@ const projects = [
     ],
     image: "/sentiment_analysis.jpeg",
     github: "https://github.com/AreenaMahek/Cloud-Based-Sentiment-Analysis-on-Big-Data-using-AWS-Services-2024",
+    date: "Dec 2024",
+  },
+  {
+    title: "Interactive OoD Data Visualization Dashboard",
+    description:
+      "A low-latency, interactive data visualization platform for research workflows. Features dynamic histogram visualization with adjustable bin sizing and interactive 2D boundary system for OoD data classification.",
+    tags: ["Python", "Trame", "Vue.js", "Vuetify", "VTK", "Plotly"],
+    highlights: [
+      "Dynamic histogram visualization engine",
+      "Interactive 2D boundary system (Easy | Medium | Hard)",
+      "Performance benchmarking across visualization technologies",
+    ],
+    github: "https://github.com/AreenaMahek/OoD_Visualizer-2024",
+    image: "/ood.jpeg",
+    date: "Aug 2024",
   },
   {
     title: "Global YouTube Statistics 2023 Dashboard",
@@ -66,6 +69,7 @@ const projects = [
     ],
     image: "/tableau_dashboard.png",
     github: "https://public.tableau.com/app/profile/areena.mahek/viz/MileStone4_Dashboard/Dashboard2",
+    date: "June 2024",
   },
   {
     title: "Online Customer Behavior Prediction",
@@ -78,6 +82,7 @@ const projects = [
       "Ensemble methods (Stacking Classifier)",
     ],
     image: "/online_customer_behavior.jpeg",
+    date: "April 2024",
   },
   {
     title: "NLP Text Summarization & Analysis",
@@ -91,6 +96,7 @@ const projects = [
     ],
     github: "https://github.com/AreenaMahek/VideoTranscription-TextRecapitulation-2022",
     image: "/summarization&transcription.jpeg",
+    date: "Dec 2022",
   }
 ];
 
@@ -112,7 +118,7 @@ export default function Projects() {
               className="group bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl overflow-hidden hover:border-[var(--primary)]/50 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-semibold text-[var(--foreground)] group-hover:text-[var(--primary-light)] transition-colors">
                     {project.title}
                   </h3>
@@ -147,6 +153,10 @@ export default function Projects() {
                     </a>
                   )}
                 </div>
+
+                {project.date && (
+                  <p className="text-xs text-[var(--accent)] mb-3">{project.date}</p>
+                )}
 
                 <p className="text-sm text-[var(--text-muted)] mb-4 text-justify">
                   {project.description}
