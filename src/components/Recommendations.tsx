@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
+
 const recommendations = [
   {
     name: "Nandhini Gulasingam",
@@ -60,7 +62,7 @@ export default function Recommendations() {
               <div className="flex items-center gap-4 pt-4 border-t border-[var(--card-border)]">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white flex-shrink-0">
                   <Image
-                    src={rec.image}
+                    src={`${basePath}${rec.image}`}
                     alt={rec.name}
                     fill
                     className="object-contain p-1"
