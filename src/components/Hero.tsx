@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
 const role = "AI Software Engineer & Full Stack Developer";
 
 export default function Hero() {
@@ -101,7 +102,7 @@ export default function Hero() {
                     Get In Touch
                   </a>
                   <a
-                    href="/resume"
+                    href={`${basePath}/resume`}
                     className="px-8 py-3 border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/10 rounded-lg transition-all duration-300 font-medium"
                   >
                     View Resume

@@ -1,6 +1,6 @@
 "use client";
 
-import { log } from "console";
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
 
 const publications = [
   {
@@ -53,7 +53,7 @@ export default function Publications() {
                     {pub.logo && (
                       <div className="relative w-10 h-10 flex-shrink-0">
                         <img
-                          src={pub.logo}
+                          src={`${basePath}${pub.logo}`}
                           alt="Publication Logo"
                           className="object-contain w-full h-full"
                         />

@@ -1,5 +1,7 @@
 "use client";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
+
 export default function ResumePage() {
   return (
     <div className="min-h-screen bg-[var(--background)] pt-24 pb-16 flex items-center justify-center">
@@ -15,7 +17,7 @@ export default function ResumePage() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-4">
                 <a
-                  href="/"
+                  href={`${basePath}/`}
                   className="p-2 rounded-lg hover:bg-[var(--card-bg)] transition-colors duration-200 text-[var(--text-muted)] hover:text-[var(--foreground)]"
                   aria-label="Go back"
                 >
@@ -38,7 +40,7 @@ export default function ResumePage() {
                 </h1>
               </div>
               <a
-                href="/AreenaMahek_Resume.pdf"
+                href={`${basePath}/AreenaMahek_Resume.pdf`}
                 download="AreenaMahek_Resume.pdf"
                 className="inline-flex items-center gap-2 px-6 py-2 bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white rounded-lg transition-colors duration-200 font-medium"
               >
@@ -62,7 +64,7 @@ export default function ResumePage() {
             {/* PDF embed - fit to screen */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <embed
-                src="/AreenaMahek_Resume.pdf#toolbar=0&navpanes=0&view=FitH"
+                src={`${basePath}/AreenaMahek_Resume.pdf#toolbar=0&navpanes=0&view=FitH`}
                 type="application/pdf"
                 className="w-full h-[calc(100vh-280px)]"
               />
