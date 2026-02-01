@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
+
 const technicalSkills = [
   { name: "React / Next.js", level: 90 },
   { name: "TypeScript", level: 90 },
@@ -90,7 +92,7 @@ export default function Skills() {
             >
               <div className="relative w-10 h-10 group-hover:scale-110 transition-transform duration-300">
                 <Image
-                  src={tool.icon}
+                  src={`${basePath}${tool.icon}`}
                   alt={tool.name}
                   fill
                   className="object-contain"

@@ -52,7 +52,7 @@ export default function Hero() {
               <div className="flex-shrink-0">
                 <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-[var(--primary)] shadow-2xl">
                   <Image
-                    src="/Main_photo.jpg"
+                    src={`${basePath}/Main_photo.jpg`}
                     alt="Areena Mahek"
                     fill
                     className="object-cover object-top"

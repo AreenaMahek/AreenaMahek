@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
+
 const projects = [
   // {
   //   title: "AI-Driven Multilingual Chatbot",
@@ -165,10 +167,10 @@ export default function Projects() {
                 {project.image && (
                   <div
                     className="relative w-full h-40 overflow-hidden rounded-lg cursor-pointer mb-4"
-                    onClick={() => setZoomedImage(project.image!)}
+                    onClick={() => setZoomedImage(`${basePath}${project.image}`)}
                   >
                     <Image
-                      src={project.image}
+                      src={`${basePath}${project.image}`}
                       alt={project.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"

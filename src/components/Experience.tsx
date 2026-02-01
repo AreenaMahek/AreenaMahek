@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
+
 const experiences = [
   {
     title: "Software Engineer",
@@ -87,7 +89,7 @@ export default function Experience() {
                     <div className="flex items-center gap-4">
                       <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-white flex-shrink-0">
                         <Image
-                          src={exp.logo}
+                          src={`${basePath}${exp.logo}`}
                           alt={exp.company}
                           fill
                           className="object-contain p-1"
