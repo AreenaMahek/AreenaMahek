@@ -23,7 +23,7 @@ export default function About() {
               href="#experience"
               className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
             >
-              <p className="text-3xl font-bold text-[var(--accent)] mb-1">2+</p>
+              <p className="text-3xl font-bold text-[var(--accent)] mb-1">3+</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Years Experience</p>
               <p className="text-xs text-[var(--text-muted)]">Industry experience in software development</p>
             </a>
@@ -60,22 +60,22 @@ export default function About() {
               <li className="flex items-start gap-3">
                 <span className="text-[var(--accent)] mt-1">&#10038;</span>
                 <div>
-                  <p className="font-semibold text-[var(--foreground)]">Full Stack Development</p>
-                  <p className="text-sm text-[var(--text-muted)]">Building scalable web applications with React, Next.js, TypeScript, Python, and Golang</p>
+                  <p className="font-semibold text-[var(--foreground)]">Customer-Facing Development</p>
+                  <p className="text-sm text-[var(--text-muted)]">Working directly with enterprise clients to understand requirements, deploy tailored solutions, and drive successful onboarding</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[var(--accent)] mt-1">&#10038;</span>
+                <div>
+                  <p className="font-semibold text-[var(--foreground)]">Full-Stack Engineering</p>
+                  <p className="text-sm text-[var(--text-muted)]">Building scalable web applications and enterprise integrations with React, Next.js, TypeScript, Python, and Golang</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[var(--accent)] mt-1">&#10038;</span>
                 <div>
                   <p className="font-semibold text-[var(--foreground)]">AI Integration</p>
-                  <p className="text-sm text-[var(--text-muted)]">Implementing LLMs, RAG pipelines, and AI automation chatbots for intelligent solutions</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-[var(--accent)] mt-1">&#10038;</span>
-                <div>
-                  <p className="font-semibold text-[var(--foreground)]">Third-Party Integrations</p>
-                  <p className="text-sm text-[var(--text-muted)]">Connecting systems with APIs and external software to create seamless workflows</p>
+                  <p className="text-sm text-[var(--text-muted)]">Implementing LLMs, RAG pipelines, and AI automation workflows for intelligent enterprise solutions</p>
                 </div>
               </li>
             </ul>
