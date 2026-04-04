@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Areena Mahek | AI Software Engineer & Full Stack Developer",
+  title: "Areena Mahek | Forward Deployed Engineer",
   description:
-    "Full-Stack Developer with 2+ years of experience building scalable, cloud-integrated, AI-driven web applications. Proficient in Next.js, React, TypeScript, Python, and Golang.",
+    "Forward Deployed Engineer with 3+ years of experience building scalable, cloud-integrated, AI-driven web applications. Proficient in Next.js, React, TypeScript, Python, and Golang.",
   keywords: [
     "Software Engineer",
     "Full Stack Developer",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Areena Mahek" }],
   openGraph: {
-    title: "Areena Mahek | Software Engineer & AI Developer",
+    title: "Areena Mahek | Forward Deployed Engineer",
     description:
-      "Full-Stack Developer with 2+ years of experience building scalable, cloud-integrated, AI-driven web applications.",
+      "Forward Deployed Engineer with 3+ years of experience building scalable, cloud-integrated, AI-driven web applications.",
     type: "website",
   },
 };
