@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
-const role = "AI Software Engineer & Full Stack Developer";
+const role = "Forward Deployed Engineer";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
