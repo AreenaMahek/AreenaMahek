@@ -23,7 +23,7 @@ export default function About() {
               href="#experience"
               className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
             >
-              <p className="text-3xl font-bold text-[var(--accent)] mb-1">3+</p>
+              <p className="text-3xl font-bold text-[var(--accent)] mb-1">5</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Years Experience</p>
               <p className="text-xs text-[var(--text-muted)]">Industry experience in software development</p>
             </a>
