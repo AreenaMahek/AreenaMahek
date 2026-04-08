@@ -14,7 +14,7 @@ const recommendations = [
     image: "/depaul.png",
     quote:
       "Since Fall 2023, I have had the opportunity to work closely with Areena in her role as a Computer Science Tutor, where she has consistently demonstrated the technical knowledge, thoughtful communication skills, and professionalism essential for success in engineering environments. Areena excels at ensuring that students gain a conceptual understanding of material before moving on to practical problem-solving. Her mastery of complex technical content has been critical to the ongoing success of our tutoring center. Feedback from students consistently highlights Areena's skill in analyzing problems, offering clear explanations, and providing helpful hints while encouraging independent learning.",
-    linkedin: "https://www.linkedin.com/in/areena-mahek/details/recommendations/?detailScreenTabIndex=2",
+    linkedin: "https://www.linkedin.com/in/areena-mahek/details/recommendations/",
   },
   {
     name: "Nandhini Gulasingam",
@@ -25,7 +25,7 @@ const recommendations = [
     image: "/depaul.png",
     quote:
       "I had the privilege of working with Areena for a year and a half on my Out-of-Distribution (OoD) Interface, a web-based tool for analyzing data shifts in medical imaging. She was instrumental in developing the OoD Visualizer, a sophisticated Trame-based application with a Vuetify front end, seamlessly integrated into the Neurobazaar platform. Areena consistently impressed me with her critical thinking, creativity, and unwavering dedication. A true self-starter, she embraced every opportunity, regularly going above and beyond expectations. Talented, hardworking, and committed, she approaches challenges with determination and consistently delivers exceptional results.",
-    linkedin: "https://www.linkedin.com/in/areena-mahek/details/recommendations/?detailScreenTabIndex=2",
+    linkedin: "https://www.linkedin.com/in/areena-mahek/details/recommendations/",
   },
   {
     name: "Sharon Dev S",
@@ -36,7 +36,7 @@ const recommendations = [
     image: "/oxmaint.jpeg",
     quote:
       "Areena is a dependable and thoughtful teammate who consistently brings a strong sense of ownership to her work. She is easy to collaborate with, communicates clearly, and approaches problems with both care and professionalism. I’ve always appreciated her positive attitude and willingness to contribute wherever needed. She would be a valuable addition to any team.",
-    linkedin: "https://www.linkedin.com/in/areena-mahek/details/recommendations/?detailScreenTabIndex=2",
+    linkedin: "https://www.linkedin.com/in/areena-mahek/details/recommendations/",
   },
 ];
 
