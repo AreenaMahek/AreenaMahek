@@ -51,22 +51,7 @@ const experiences = [
       "Assisted in debugging, optimizing code, and guiding development projects in distributed systems and full-stack apps",
     ],
     tags: ["Python", "Java", "SQL", "Django", "Tableau", "Power BI"],
-  },
-  {
-    title: "Systems Engineer",
-    company: "Infosys Ltd.",
-    logo: "/infosys.png",
-    location: "Hyderabad, India",
-    period: "Jan 2021 – Nov 2022",
-    highlights: [
-      "Involved in the R&D Unit – ICETS (Infosys Centre for Emerging Technologies), contributing to innovation-driven initiatives and enterprise solutions",
-      "Contributed to the development of IDSS, an enterprise-grade ETL-based data migration platform used across multiple business units, improving migration performance by 5x",
-      "Developed Proof of Concepts (POCs) to enhance data migration efficiency, including high-speed Excel-based data processing and automated report generation using Python",
-      "Built a VAT validation system for European compliance using VIES, along with address validation via Melissa API",
-      "Designed and enhanced data migration workflows supporting databases such as SQL, SAP S/4HANA, and MongoDB, improving cross-platform data handling efficiency",
-    ],
-    tags: ["Python", "SQL", "SAP S/4HANA", "MongoDB", "ETL", "Data Migration", "Excel Automation", "REST APIs"],
-  },
+  }
 ];
 
 export default function Experience() {
