@@ -9,10 +9,11 @@ export default function About() {
         </h2>
         <div className="w-20 h-1 bg-[var(--primary)] mb-8" />
 
-        <p className="text-[var(--text-muted)] text-base md:text-lg leading-relaxed mb-12 max-w-3xl">
-          I specialize in building scalable web applications, intelligent systems, and AI automation chatbots.
-          My work spans React, Next.js, TypeScript, Python, and Golang, with expertise in third-party software
-          integrations and AI solutions like LLMs and RAG pipelines to create smarter, more impactful products.
+        <p className="text-[var(--text-muted)] text-base md:text-lg leading-relaxed mb-12 max-w-3xl text-justify">
+          I’m a Forward Deployed Engineer focused on building AI-powered, enterprise-scale systems that solve real-world problems. 
+          I work closely with clients to translate complex business needs into scalable solutions—combining full-stack engineering 
+          with AI technologies like LLMs and RAG pipelines. My experience spans React, Next.js, TypeScript, Python, and Golang, 
+          with a strong focus on integrations, automation, and delivering production-ready systems.
         </p>
 
         {/* Two column layout: Stats cards on left, Focus areas on right */}
@@ -23,9 +24,9 @@ export default function About() {
               href="#experience"
               className="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl p-4 hover:border-[var(--primary)]/50 hover:scale-[1.02] transition-all duration-300 cursor-pointer block"
             >
-              <p className="text-3xl font-bold text-[var(--accent)] mb-1">5</p>
+              <p className="text-3xl font-bold text-[var(--accent)] mb-1">3</p>
               <p className="font-semibold text-[var(--foreground)] text-sm mb-1">Years Experience</p>
-              <p className="text-xs text-[var(--text-muted)]">Industry experience in software development</p>
+              <p className="text-xs text-[var(--text-muted)]">Building AI-powered, enterprise-grade systems and client-facing solutions</p>
             </a>
             <a
               href="#education"
