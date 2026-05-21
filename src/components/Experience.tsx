@@ -6,13 +6,13 @@ const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
 
 const experiences = [
   {
-    title: "Forward Deployed Engineer",
+    title: "Lead Forward Deployed Engineer",
     company: "Oxmaint Inc.",
     logo: "/oxmaint.jpeg",
     location: "Sunnyvale, CA (Remote)",
     period: "Aug 2025 – Present",
     highlights: [
-      "Acted as a Forward Deployed Engineer, working directly with enterprise clients to understand requirements, deploy tailored solutions, and ensure seamless system integration and performance in production environments",
+      "Acted as a Lead Forward Deployed Engineer, working directly with enterprise clients to understand requirements, deploy tailored solutions, and ensure seamless system integration and performance in production environments",
       "Led end-to-end client implementations, translating business needs into technical solutions and driving successful onboarding across diverse enterprise systems",
       "Owned complex enterprise integrations with SAP S/4HANA (BTP, OData), SAP Business One, and QuickBooks, enabling streamlined financial and operational workflows for customers",
       "Designed and deployed AI-driven automation workflows (using n8n and LLMs like GPT-OSS and Anthropic Claude) to solve customer-specific challenges, reducing onboarding time by 40% and improving operational efficiency",
@@ -109,7 +109,7 @@ export default function Experience() {
                         key={i}
                         className="flex items-start gap-3 text-[var(--text-muted)] text-sm"
                       >
-                        <span className="text-[var(--secondary)] mt-1.5">▹</span>
+                        <span className="text-[var(--secondary)] mt-1.5 text-justify">▹</span>
                         <span>{highlight}</span>
                       </li>
                     ))}
