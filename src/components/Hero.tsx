@@ -76,9 +76,15 @@ export default function Hero() {
                 </h2>
 
                 <div className="flex flex-col gap-4 mb-8 max-w-xl">
-                  <p className="text-base md:text-lg text-[var(--text-muted)] flex items-center gap-3">
-                    <span className="text-[var(--accent)] text-xl">&#10038;</span>
-                    Passionate about building scalable AI-powered applications, enterprise integrations, and modern full-stack solutions that deliver real-world impact.
+                  <p className="text-base md:text-lg text-[var(--text-muted)] flex items-start gap-3">
+                    <span className="text-[var(--accent)] text-xl leading-[1.6]">
+                      &#10038;
+                    </span>
+                    <span>
+                      Passionate about building scalable AI-powered applications,
+                      enterprise integrations, and modern full-stack solutions that
+                      deliver real-world impact.
+                    </span>
                   </p>
 
                   <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
