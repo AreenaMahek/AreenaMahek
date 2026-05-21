@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === 'production' ? '/AreenaMahek' : '';
-const role = "Forward Deployed Engineer";
+const role = "Forward Deployed Engineer | AI & Full-Stack Engineer";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -78,7 +78,7 @@ export default function Hero() {
                 <div className="flex flex-col gap-4 mb-8 max-w-xl">
                   <p className="text-base md:text-lg text-[var(--text-muted)] flex items-center gap-3">
                     <span className="text-[var(--accent)] text-xl">&#10038;</span>
-                    Passionate about leveraging AI and web technologies to build innovative and impactful solutions.
+                    Passionate about building scalable AI-powered applications, enterprise integrations, and modern full-stack solutions that deliver real-world impact.
                   </p>
 
                   <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
